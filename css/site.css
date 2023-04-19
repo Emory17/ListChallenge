@@ -1,0 +1,87 @@
+:root{
+    /* colors */
+    /*
+    --es-primary-color: rgb(145,203,251);
+    --es-secondary-color: rgb(66,148,186);
+    --es-highlight-color: rgb(250,225,120);
+    */
+    --es-primary-color: #1e56a0;
+    --es-secondary-color: #266dcb;
+    --es-highlight-color: #FAB341;
+
+    --es-dark-color: #212121;
+    --es-light-color: #deeefb;
+    --es-background-color: rgba(250,250,250,.8);
+
+    --es-logo-color: #1e56a0;
+    --es-logo-color2: #266dcb;
+    --es-logo-color3: #163f75;
+
+    /* nav bar colors */
+    --es-nav-bg-color: var(--es-logo-color3);
+    --es-nav-toggler-color: var(--es-highlight-color:);
+    --es-nav-toggler-glow: rgba(250,179,65,.55);
+
+    /* form colors */
+    --es-formfocus-border-color: var(--es-secondary-color);
+    --es-formfocus-shadow: var(--es-primary-color);
+    --es-form-background-color: var(--es-background-color);
+}
+
+/* Sticky Footer CSS */
+html,
+body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    flex-shrink: 0;
+}
+/* End Sticky Footer CSS */
+
+#mainNav{
+    background: var(--es-primary-color);
+}
+
+footer{
+    background: var(--es-primary-color);
+    color: var(--es-light-color);
+}
+
+footer .bi{
+    color: var(--es-light-color);
+    font-size: 1.5rem;
+    padding-left: .5rem;
+    transition: color .25s ease;
+}
+
+footer .bi:hover{
+    color: var(--es-nav-toggler-color);
+}
+
+.checklist{
+    list-style-type: none;
+}
+
+.checklist>li i{
+    color: var(--es-secondary-color);
+    padding-right: .5rem;
+}
+
+.devIcons{
+    font-size: 3rem;
+    padding-left: .5rem;
+}
+
+.appLogo{
+    max-width: 400px;
+}
