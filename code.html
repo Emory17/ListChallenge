@@ -1,169 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>APP NAME - A coding challenge</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Climbing Competion Judge List - A coding challenge</title>
 
-    <!-- Bootstrap CSS-->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-        crossorigin="anonymous"
-    />
+        <!-- Bootstrap CSS-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
+        />
 
-    <!-- Bootstrap Icons-->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+        <!-- Bootstrap Icons-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+        />
 
-    <!-- Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet"
-    />
+        <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Dev Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
+        <!-- Dev Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
 
-    <link href="/css/prism.css" rel="stylesheet" />
-    <link href="/css/site.css" rel="stylesheet" />
+        <link href="/css/prism.css" rel="stylesheet" />
+        <link href="/css/site.css" rel="stylesheet" />
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-</head>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="/img/ESoperLogoTransparent.png" height="50" />
-                    APP NAME
-                </a>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/img/ESoperLogoTransparent.png" height="50" />
+                        Climbing Competion Judge List
+                    </a>
 
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-es">
-                        <i class="bi bi-list"></i>
-                    </span>
-                </button>
-                <div
-                    class="collapse navbar-collapse"
-                    id="navbarSupportedContent"
-                >
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/index.html"
-                                >Home</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/app.html">The App</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/code.html">The Code</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/Emory17">The Repo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://esoper-portfolio.netlify.app">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a> <!-- Change Link -->
-                        </li>
-                    </ul>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-es">
+                            <i class="bi bi-list"></i>
+                        </span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/app.html">The App</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="/code.html"
+                                    >The Code</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="https://github.com/Emory17"
+                                    >The Repo</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="https://esoper-portfolio.netlify.app"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                                <!-- Change Link -->
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main class="container">
-        <h1 class="border-bottom border-2 border-dark">The Code</h1>
-        <div class="row">
-            <div class="col-12 col-lg-8">
-                <pre class="line-numbers">
+        <main class="container">
+            <h1 class="border-bottom border-2 border-dark">The Code</h1>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <pre class="line-numbers">
                     <code class="language-js">
-function displayMessage() {
-    let msg = document.getElementById("message").value;
-    //alert(msg);
+var climbs = [
+    {
+        name: "Johnson Smith",
+        route: 34,
+        diff: "V5",
+        flash: true,
+        div: "Intermediate",
+    },
+    {
+        name: "Sarah Holmes",
+        route: 27,
+        diff: "V4",
+        flash: false,
+        div: "Beginner",
+    },
+    {
+        name: "Dave",
+        route: 17,
+        diff: "V9",
+        flash: true,
+        div: "Advanced",
+    },
+    {
+        name: "Julia Barnes",
+        route: 34,
+        diff: "V5",
+        flash: false,
+        div: "Intermediate",
+    },
+    {
+        name: "Johnson Smith",
+        route: 27,
+        diff: "V4",
+        flash: false,
+        div: "Intermediate",
+    },
+];
 
-    Swal.fire(
-        {
-            backdrop: false,
-            title: 'APP NAME',
-            text: msg
+editmode = false;
+sort = "name";
+sortswitch = false;
+
+function buildTable() {
+    const table = document.getElementById("climbTable");
+    const template = document.getElementById("tableRowTemplate");
+    data = getData();
+
+    if(sort == "name"){
+        data.sort(function(a,b){
+            out = a.name.localeCompare(b.name);
+            if(out == 0){
+                return a.route - b.route;
+            }
+            return out;
+        });
+    }
+    else if(sort == "route"){
+        data.sort(function (a, b) {
+            out = a.route - b.route;            
+            if (out == 0) {
+                return a.name.localeCompare(b.name);
+            }
+            return out;
+        });
+    }
+    else if(sort == "diff"){
+        data.sort(function (a, b) {
+            out = a.diff.localeCompare(b.diff);
+            if (out == 0) {
+                return a.name.localeCompare(b.name);
+            }
+            return out;
+        });
+    }
+    else{
+        data.sort(function (a, b) {
+            let aval =
+                a.div == "Beginner" ? 1 : a.div == "Intermediate" ? 2 : 3;
+            let bval =
+                b.div == "Beginner" ? 1 : b.div == "Intermediate" ? 2 : 3;
+            out = aval - bval;
+            if (out == 0) {
+                return a.name.localeCompare(b.name);
+            }
+            return out;
+        });
+    }
+
+    if(sortswitch){data.reverse();}
+
+    table.innerHTML = "";
+    for (i = 0; i < data.length; i++) {
+        let climb= data[i];
+        let tableRow = document.importNode(template.content, true);
+        tableRow.querySelector("[data-id='name']").textContent = climb.name;
+        tableRow.querySelector("[data-id='route']").textContent = climb.route.toLocaleString();
+        tableRow.querySelector("[data-id='diff']").textContent = climb.diff;
+        if(climb.flash){
+            tableRow.querySelector("[data-id='flash']").innerHTML = "&lt;input type='checkbox' onclick='return false;' checked/>";
         }
+        else{
+            tableRow.querySelector("[data-id='flash']").innerHTML = "&lt;input type='checkbox' onclick='return false;'/>";
+        }
+        tableRow.querySelector("[data-id='div']").textContent = climb.div;
+        tableRow.querySelector("tr").setAttribute("data-climb", climb.id);
+        climbTable.appendChild(tableRow);
+    }
+}
+
+function changeSort(){
+    let sortSelect = document.getElementById("sortSelect");
+    let selectedIndex = sortSelect.selectedIndex;
+    sort = sortSelect.options[selectedIndex].value;
+    buildTable();
+}
+
+function switchSort(dirbtn){
+    if(sortswitch){
+        dirbtn.innerHTML = "&lt;i class='bi bi-arrow-down'>&lt;/i>";
+    }
+    else{
+        dirbtn.innerHTML = "&lt;i class='bi bi-arrow-up'>&lt;/i>";
+    }
+    sortswitch = !sortswitch;
+    buildTable();
+}
+
+function getData() {
+    let data = localStorage.getItem("es-climbdata");
+
+    if (data == null) {
+        let idData = climbs.map((climb) => {
+            climb.id = generateId();
+            return climb;
+        });
+
+        localStorage.setItem("es-climbdata", JSON.stringify(idData));
+        data = localStorage.getItem("es-climbdata");
+    }
+
+    let newData = JSON.parse(data);
+    return newData;
+}
+
+function saveData() {
+    let name = document.getElementById("ename").value;
+    let route = parseInt(document.getElementById("eroute").value);
+
+    let diffSelect = document.getElementById("ediff");
+    let selectedIndex = diffSelect.selectedIndex;
+    let diff = diffSelect.options[selectedIndex].text;
+
+    let flash = document.getElementById("eflash").checked;
+
+    let divSelect = document.getElementById("ediv");
+    selectedIndex = divSelect.selectedIndex;
+    let div = divSelect.options[selectedIndex].text;
+
+    let newdata = {
+        name: name,
+        route: route,
+        diff: diff,
+        flash: flash,
+        div: div,
+        id: generateId(),
+    };
+
+    let data = getData();
+    data.push(newdata);
+
+    localStorage.setItem("es-climbdata", JSON.stringify(data));
+    clearForm();
+    buildTable();
+}
+
+function clearForm(){
+    document.getElementById("addDataForm").reset();
+}
+
+function generateId() {
+    return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
+        (
+            c ^
+            (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))
+        ).toString(16)
     );
+}
+
+function editData(ebutton) {
+    let tableRow = ebutton.parentElement.parentElement;
+
+    let nameData = tableRow.querySelector("[data-id='name']");
+    let name = nameData.textContent;
+    nameData.innerHTML = "&lt;input type='text' id='editname' value='" + name + "' class=form-control>";
+
+    let routeData = tableRow.querySelector("[data-id='route']");
+    let route = routeData.textContent;
+    routeData.innerHTML = "&lt;input type='number' id='editroute' value='" + route + "' class=form-control>";
+
+    const diffTemplate = document.getElementById("diffSelectTemplate");
+    let diffNode = document.importNode(diffTemplate.content, true);
+    console.log(diffNode)
+    let diffData = tableRow.querySelector("[data-id='diff']");
+    let selector = document.getElementById("ediff");
+    diffNode.querySelector("select").selectedIndex = [...selector.options,].findIndex(
+        option => option.text == diffData.textContent
+    );
+    diffData.innerHTML = "";
+    diffData.appendChild(diffNode);
+
+    let checkbox = tableRow.querySelector("[data-id='flash']").querySelector("input");
+    checkbox.removeAttribute("onclick");
+    let parent = checkbox.parentNode;
+    let wrapper = document.createElement("div");
+    wrapper.classList.add("form-control")
+    parent.replaceChild(wrapper, checkbox);
+    wrapper.appendChild(checkbox);
+
+    const divTemplate = document.getElementById("divSelectTemplate");
+    let divNode = document.importNode(divTemplate.content, true);
+    let divData = tableRow.querySelector("[data-id='div']");
+    selector = document.getElementById("ediv");
+    divNode.querySelector("select").selectedIndex = [...selector.options].findIndex(
+        (option) => option.text == divData.textContent
+    );
+    divData.innerHTML = "";
+    divData.appendChild(divNode);
+
+    tableRow.querySelector("[data-id='options']").innerHTML =
+        "&lt;button class='btn btn-secondary  mx-2' onclick='buildTable()'>Cancel&lt;/button>&lt;button class='btn btn-primary' onclick='updateData(this)'>Save&lt;/button>";
+}
+
+function deleteData(dbutton) {
+    let tableRow = dbutton.parentElement.parentElement;
+    let dataId = tableRow.getAttribute("data-climb");
+    let data = getData();
+    data = data.filter((climb) => climb.id != dataId);
+    localStorage.setItem("es-climbdata", JSON.stringify(data));
+    buildTable();
+}
+
+function updateData(sbutton) {
+    let tableRow = sbutton.parentElement.parentElement;
+    let dataId = tableRow.getAttribute("data-climb");
+    data = getData();
+    let dataindex = data.findIndex(climb => climb.id == dataId);
+
+    let name = tableRow
+        .querySelector("[data-id='name']")
+        .querySelector("input").value;
+
+    let route = parseInt(
+        tableRow
+            .querySelector("[data-id='route']")
+            .querySelector("input").value
+    );
+
+    let diffSelect = tableRow
+        .querySelector("[data-id='diff']")
+        .querySelector("select");
+    let selectedIndex = diffSelect.selectedIndex;
+    let diff = diffSelect.options[selectedIndex].text;
+
+    let flash = document
+        .querySelector("[data-id='flash']")
+        .querySelector("input").checked;
+
+
+    let divSelect = tableRow
+        .querySelector("[data-id='div']")
+        .querySelector("select");
+    selectedIndex = divSelect.selectedIndex;
+    let div = divSelect.options[selectedIndex].text;
+
+    let newdata = {
+        name: name,
+        route: route,
+        diff: diff,
+        flash: flash,
+        div: div,
+        id: dataId,
+    };
+
+    data[dataindex] = newdata;
+    localStorage.setItem("es-climbdata", JSON.stringify(data));
+    buildTable();
 }
                     </code>
                 </pre>
-            </div>
-            <div class="col-12 col-lg-4">
-                <p>The code is structured in one function</p>
-                <h5>displayMessage</h5>
-                <p>Prints out the message</p>
-            </div>
-        </div>
-    </main>
-
-    <footer class="py-3">
-        <div class="container">
-            <div
-                class="row row-cols-1 row-cols-lg-3 gy-3 py-3 align-items-center text-center"
-            >
-                <div class="col text-light order-md-first text-lg-start">
-                    &copy; 2023 Emory Soper
                 </div>
-                <div class="col">
-                    <img src="img/ESoperLogoTransparent.png" height="50" />
-                </div>
-                <div class="col text-lg-end">
-                    <a href="https://www.linkedin.com/in/emory-soper"
-                        ><i class="socialicons bi bi-linkedin p-2"></i
-                    ></a>
-                    <a href="https://github.com/Emory17"
-                        ><i class="socialicons bi bi-github p-2"></i
-                    ></a>
+                <div class="col-12 col-lg-4">
+                    <p>The code is structured in one function</p>
+                    <h5>displayMessage</h5>
+                    <p>Prints out the message</p>
                 </div>
             </div>
-        </div>
-    </footer>
+        </main>
 
-    <!-- Bootstrap JS-->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"
-    ></script>
+        <footer class="py-3">
+            <div class="container">
+                <div
+                    class="row row-cols-1 row-cols-lg-3 gy-3 py-3 align-items-center text-center"
+                >
+                    <div class="col text-light order-md-first text-lg-start">
+                        &copy; 2023 Emory Soper
+                    </div>
+                    <div class="col">
+                        <img src="img/ESoperLogoTransparent.png" height="50" />
+                    </div>
+                    <div class="col text-lg-end">
+                        <a href="https://www.linkedin.com/in/emory-soper"
+                            ><i class="socialicons bi bi-linkedin p-2"></i
+                        ></a>
+                        <a href="https://github.com/Emory17"
+                            ><i class="socialicons bi bi-github p-2"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <!-- Prism JS-->
-    <script src="js/prism.js"></script>
-    <script>
-        Prism.plugins.NormalizeWhitespace.setDefaults({
-            'remove-trailing': true,
-            'remove-indent': true,
-            'left-trim': true,
-            'right-trim': true
-        })
-    </script>
-</body>
+        <!-- Bootstrap JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Prism JS-->
+        <script src="js/prism.js"></script>
+        <script>
+            Prism.plugins.NormalizeWhitespace.setDefaults({
+                "remove-trailing": true,
+                "remove-indent": true,
+                "left-trim": true,
+                "right-trim": true,
+            });
+        </script>
+    </body>
 </html>

@@ -1,147 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>APP NAME - A coding challenge</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Climbing Competion Judge List - A coding challenge</title>
 
-    <!-- Bootstrap CSS-->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-        crossorigin="anonymous"
-    />
+        <!-- Bootstrap CSS-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
+        />
 
-    <!-- Bootstrap Icons-->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+        <!-- Bootstrap Icons-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+        />
 
-    <!-- Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet"
-    />
+        <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Dev Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
+        <!-- Dev Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
 
-    <link href="/css/site.css" rel="stylesheet" />
+        <link href="/css/site.css" rel="stylesheet" />
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-</head>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="/img/ESoperLogoTransparent.png" height="50" />
-                    APP NAME
-                </a>
+    <body onload="buildTable()">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/img/ESoperLogoTransparent.png" height="50" />
+                        Climbing Competion Judge List
+                    </a>
 
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-es">
-                        <i class="bi bi-list"></i>
-                    </span>
-                </button>
-                <div
-                    class="collapse navbar-collapse"
-                    id="navbarSupportedContent"
-                >
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="/index.html"
-                                >Home</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/app.html">The App</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/code.html">The Code</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/Emory17">The Repo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://esoper-portfolio.netlify.app">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a> <!-- Change Link -->
-                        </li>
-                    </ul>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-es">
+                            <i class="bi bi-list"></i>
+                        </span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="/app.html"
+                                    >The App</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/code.html"
+                                    >The Code</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="https://github.com/Emory17"
+                                    >The Repo</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="https://esoper-portfolio.netlify.app"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                                <!-- Change Link -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container mt-3">
+            <div>
+                <h1>Climbing Competition Judge Form</h1>
+                <div class="mt-3 d-flex">
+                    <h2>Judge Name :&nbsp;</h2>
+                    <input type="text" />
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                    <button
+                        class="btn btn-secondary my-3"
+                        data-bs-toggle="modal"
+                        data-bs-target="#addDataModal"
+                    >
+                        Add Event
+                    </button>
+                    <h4>Sort By:</h4>
+                    <select id="sortSelect" onchange="changeSort()">
+                        <option value="name">Competitor</option>
+                        <option value="route">Route #</option>
+                        <option value="diff">Difficulty</option>
+                        <option value="div">Division</option>
+                    </select>
+                    <button
+                        class="btn btn-secondary"
+                        onclick="switchSort(this)"
+                    >
+                        <i class="bi bi-arrow-down"></i>
+                    </button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered border">
+                        <thead class="table-dark">
+                            <th>Competitor</th>
+                            <th>Route #</th>
+                            <th>Difficulty</th>
+                            <th>Flash?</th>
+                            <th>Division</th>
+                            <th>Options</th>
+                        </thead>
+                        <tbody id="climbTable"></tbody>
+                    </table>
                 </div>
             </div>
-        </nav>
-    </header>
+        </main>
 
-    <main class="container mt-3">
-        <h1>APP UI GOES HERE</h1>
-        <input type="text" id="message" placeholder="Enter a Message"/>
-        <button onclick="displayMessage()"  class="btn btn-primary" id="btnSubmit">Display Message</button>
-    </main>
+        <footer class="py-3">
+            <div class="container">
+                <div
+                    class="row row-cols-1 row-cols-lg-3 gy-3 py-3 align-items-center text-center"
+                >
+                    <div class="col text-light order-md-first text-lg-start">
+                        &copy; 2023 Emory Soper
+                    </div>
+                    <div class="col">
+                        <img src="img/ESoperLogoTransparent.png" height="50" />
+                    </div>
+                    <div class="col text-lg-end">
+                        <a href="https://www.linkedin.com/in/emory-soper"
+                            ><i class="socialicons bi bi-linkedin p-2"></i
+                        ></a>
+                        <a href="https://github.com/Emory17"
+                            ><i class="socialicons bi bi-github p-2"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <footer class="py-3">
-        <div class="container">
-            <div
-                class="row row-cols-1 row-cols-lg-3 gy-3 py-3 align-items-center text-center"
-            >
-                <div class="col text-light order-md-first text-lg-start">
-                    &copy; 2023 Emory Soper
-                </div>
-                <div class="col">
-                    <img src="img/ESoperLogoTransparent.png" height="50" />
-                </div>
-                <div class="col text-lg-end">
-                    <a href="https://www.linkedin.com/in/emory-soper"
-                        ><i class="socialicons bi bi-linkedin p-2"></i
-                    ></a>
-                    <a href="https://github.com/Emory17"
-                        ><i class="socialicons bi bi-github p-2"></i
-                    ></a>
+        <template id="tableRowTemplate">
+            <tr>
+                <td data-id="name"></td>
+                <td data-id="route"></td>
+                <td data-id="diff"></td>
+                <td data-id="flash"></td>
+                <td data-id="div"></td>
+                <td data-id="options">
+                    <button
+                        class="btn btn-primary mx-2"
+                        onclick="editData(this)"
+                    >
+                        Edit</button
+                    ><button class="btn btn-danger" onclick="deleteData(this)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        </template>
+
+        <template id="diffSelectTemplate">
+            <select class="form-control">
+                <option value="V0">V0</option>
+                <option value="V1">V1</option>
+                <option value="V2">V2</option>
+                <option value="V3">V3</option>
+                <option value="V4">V4</option>
+                <option value="V5">V5</option>
+                <option value="V6">V6</option>
+                <option value="V7">V7</option>
+                <option value="V8">V8</option>
+                <option value="V9">V9</option>
+                <option value="V10">V10</option>
+            </select>
+        </template>
+
+        <template id="divSelectTemplate">
+            <select class="form-control">
+                <option value="BEG">Beginner</option>
+                <option value="INT">Intermediate</option>
+                <option value="ADV">Advanced</option>
+            </select>
+        </template>
+
+        <div
+            class="modal fade"
+            id="addDataModal"
+            tabindex="-1"
+            aria-labelledby="addDataModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form id="addDataForm" action="#">
+                        <div class="modal-header">
+                            <div class="fs-5 d-flex w-100">
+                                <h1>Add A New Climb</h1>
+                            </div>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                                onclick="clearForm()"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <label for="Competitor" class="form-label"
+                                    >Competitor</label
+                                >
+                                <input
+                                    id="ename"
+                                    name="Competitor"
+                                    type="text"
+                                    class="form-control"
+                                />
+                            </div>
+                            <div>
+                                <label for="Route" class="form-label"
+                                    >Route #</label
+                                >
+                                <input
+                                    id="eroute"
+                                    name="Route"
+                                    type="number"
+                                    class="form-control"
+                                />
+                            </div>
+                            <div>
+                                <label for="Difficulty" class="form-label"
+                                    >Difficulty</label
+                                >
+                                <select id="ediff" class="form-control">
+                                    <option value="V0">V0</option>
+                                    <option value="V1">V1</option>
+                                    <option value="V2">V2</option>
+                                    <option value="V3">V3</option>
+                                    <option value="V4">V4</option>
+                                    <option value="V5">V5</option>
+                                    <option value="V6">V6</option>
+                                    <option value="V7">V7</option>
+                                    <option value="V8">V8</option>
+                                    <option value="V9">V9</option>
+                                    <option value="V10">V10</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="Flash" class="form-label"
+                                    >Flash</label
+                                >
+                                <div class="form-control">
+                                    <input
+                                        id="eflash"
+                                        name="Flash"
+                                        type="checkbox"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="Division" class="form-label"
+                                    >Division</label
+                                >
+                                <select id="ediv" class="form-control">
+                                    <option value="BEG">Beginner</option>
+                                    <option value="INT">Intermediate</option>
+                                    <option value="ADV">Advanced</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex">
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                                onclick="clearForm()"
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                                onclick="saveData()"
+                            >
+                                Save
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <!-- Bootstrap JS-->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"
-    ></script>
+        <!-- Bootstrap JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Sweet Alerts-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- Sweet Alerts-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- App JS-->
-    <script src="/js/site.js"></script>
-    <!--
+        <!-- App JS-->
+        <script src="/js/site.js"></script>
+        <!--
     <script>
         document.getElementById('btnSubmit').addEventListener('click',displayMessage)
     </script>
-    -->
-
-
-</body>
+    --></body>
 </html>
